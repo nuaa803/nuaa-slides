@@ -1,0 +1,85 @@
+% This nuaa-JUB.tex is a latex-beamer template using the JUB beamer theme produced by Billy Okal.
+% URL: https://github.com/makokal/beamer-themes/tree/master/JUB
+% 
+% Copyright (c) 2011-2014, Billy Okal All rights reserved.
+% 
+% Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+% Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+% Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+% Neither the name of the nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
+%
+% THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+\RequirePackage{fix-cm}
+% \documentclass[handout]{beamer}
+\documentclass[CJKutf8]{beamer}
+\usepackage{CJKutf8}
+\usepackage{mathptmx} % use Times fonts if available on your TeX system
+\usepackage{amssymb}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{pgfplots}
+\usepackage{multirow}
+\usepackage{amsmath}
+
+\usetheme{JUB}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[scaled]{helvet}
+\usepackage[font={scriptsize,it}]{caption}
+\usepackage{libertine}
+
+\begin{document}
+\begin{CJK*}{UTF8}{gbsn} % support for Chinese
+
+  \title{Main Title 主标题}
+  \subtitle{Subtitle 副标题} % optional
+  \author{Author 作者}
+  \date{2017\ 06\ 08}
+  \institute{Nanjing University of Aeronautics and Astronautics\\ 南京航空航天大学\\ \url{http://www.nuaa.edu.cn/}} % optional
+
+  % ================================================================
+  \begin{frame}[plain,t]
+    \titlepage
+  \end{frame}
+
+  % ================================================================
+  \begin{frame}{Table of Contents 目录}
+    \tableofcontents
+  \end{frame}
+
+  \section{Introduction}
+  \label{Sec:introduction}
+  % =============================================================================
+  \begin{frame}{1. Introduction 引言}
+  This nuaa-JUB.tex is a \LaTeX \ Beamer template using the JUB Beamer theme \cite{JUBTheme} produced by Billy Okal.
+
+  此nuaa-JUB.tex文件是一个使用了Billy Okal制作的JUB Beam主题\cite{JUBTheme}的\LaTeX \ Beamer模板。
+
+  \begin{figure}
+    \begin{center}
+        \includegraphics[scale=0.1]{latex.png}
+    \end{center}
+    \caption{\LaTeX \ beamer}
+    \label{Fig:latex_beamer}
+  \end{figure}
+
+  \end{frame}
+
+
+  % =============================================================================
+  \begin{frame}{\small{\bf{Discovering social circles in Ego networks}}}
+    \begin{center}
+      \Huge{\bf{Thank you!}}
+    \end{center}
+  \end{frame}
+
+  \bibliographystyle{IEEEtran} % comment this line if nothing is cited
+  \bibliography{bibliography_file} % comment this line if nothing is cited
+
+\end{CJK*}
+\end{document}
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
