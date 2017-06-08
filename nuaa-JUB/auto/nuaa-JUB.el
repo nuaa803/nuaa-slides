@@ -34,7 +34,9 @@
     "libertine")
    (LaTeX-add-labels
     "Sec:introduction"
-    "Fig:latex_beamer")
+    "Fig:latex_beamer"
+    "Sec:model"
+    "Sec:experiments")
    (LaTeX-add-bibliographies
     "bibliography_file")))
 

@@ -10,6 +10,15 @@
 %
 % THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
+% Required files to compile:
+% 1. automation_logo.pdf
+% 2. beamerthemeJUB.sty
+% 3. bibliography_file.bib
+% 4. jjlogo.pdf
+% 5. large-corner.pdf
+% 6. nuaa.png
+% 7. small-corner.pdf
+
 \RequirePackage{fix-cm}
 % \documentclass[handout]{beamer}
 \documentclass[CJKutf8]{beamer}
@@ -38,41 +47,83 @@
   \date{2017\ 06\ 08}
   \institute{Nanjing University of Aeronautics and Astronautics\\ 南京航空航天大学\\ \url{http://www.nuaa.edu.cn/}} % optional
 
-  % ================================================================
   \begin{frame}[plain,t]
     \titlepage
-  \end{frame}
-
-  % ================================================================
+  \end{frame} % ================================================================
+  
   \begin{frame}{Table of Contents 目录}
     \tableofcontents
-  \end{frame}
-
+  \end{frame} % ================================================================
+  
   \section{Introduction}
   \label{Sec:introduction}
-  % =============================================================================
   \begin{frame}{1. Introduction 引言}
-  This nuaa-JUB.tex is a \LaTeX \ Beamer template using the JUB Beamer theme \cite{JUBTheme} produced by Billy Okal.
+    \framesubtitle{frame subtitle 页面副标题}
+    This nuaa-JUB.tex is a \LaTeX \ Beamer template using the JUB Beamer theme \cite{JUBTheme} produced by Billy Okal.
+    \bigskip
+    此nuaa-JUB.tex文件是一个使用了Billy Okal制作的JUB Beam主题\cite{JUBTheme}的\LaTeX \ Beamer模板。
 
-  此nuaa-JUB.tex文件是一个使用了Billy Okal制作的JUB Beam主题\cite{JUBTheme}的\LaTeX \ Beamer模板。
-
-  \begin{figure}
-    \begin{center}
+    \begin{figure}
+      \begin{center}
         \includegraphics[scale=0.1]{latex.png}
-    \end{center}
-    \caption{\LaTeX \ beamer}
-    \label{Fig:latex_beamer}
-  \end{figure}
+      \end{center}
+      \caption{\LaTeX \ beamer}
+      \label{Fig:latex_beamer}
+    \end{figure}
+  \end{frame} % ================================================================
 
-  \end{frame}
+  \section{Mathematical model}
+  \label{Sec:model}
+  \begin{frame}{2. Mathematical model 数学模型}
+    Lists 列表
 
+    \begin{itemize}
+    \item Apple
+    \item Orange
+    \item Banana
+    \end{itemize}
+
+    \begin{enumerate}
+    \item Monday
+    \item Tuesday
+    \item Wednesday
+    \end{enumerate}
+
+    \begin{description}
+    \item[Description list] is a type of list to describe items.
+    \item[Description list] 是一种用于描述的列表。
+    \end{description}
+  \end{frame} % ================================================================
+
+  \section{Empirical experiments}
+  \label{Sec:experiments}
+  \begin{frame}{3. Empirical experiments 实验}
+    Blocks 区块
+
+      \begin{definition}[\LaTeX]
+        \LaTeX \ is a document preparation system.
+      \end{definition}
+
+      \begin{theorem}[Pythagorean theorem]
+        $a^2 + b^2 = c^2$
+      \end{theorem}
+
+      \begin{alertblock}{Uh-oh.}
+        By the pricking of my thumbs.
+      \end{alertblock}
+
+      \begin{exampleblock}{Uh-oh.}
+        Something evil this way comes.
+      \end{exampleblock}
+
+  \end{frame} % ================================================================
 
   % =============================================================================
-  \begin{frame}{\small{\bf{Discovering social circles in Ego networks}}}
+  \begin{frame}{}
     \begin{center}
       \Huge{\bf{Thank you!}}
     \end{center}
-  \end{frame}
+  \end{frame} % ================================================================
 
   \bibliographystyle{IEEEtran} % comment this line if nothing is cited
   \bibliography{bibliography_file} % comment this line if nothing is cited
