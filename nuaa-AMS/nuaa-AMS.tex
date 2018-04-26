@@ -1,40 +1,39 @@
-% This nuaa-JUB.tex is a latex-beamer template using the JUB beamer theme produced by Billy Okal.
-% URL: https://github.com/makokal/beamer-themes/tree/master/JUB
+% This nuaa-AMS.tex is a latex-beamer template using the beamer theme for the university of Amsterdam produced by Nico Schlömer, modified by Felix Ding.
+% URL: https://github.com/nschloe/ua-beamer
 % 
-% Copyright (c) 2011-2014, Billy Okal All rights reserved.
-% 
-% Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
-% Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
-% Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
-% Neither the name of the nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
-%
-% THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+% Copyright 2009--2011 by Nico Schlömer
+% This file may be distributed and/or modified
+% 1. under the LaTeX Project Public License and/or
+% 2. under the GNU Public License.
 
-% Required files to compile:
-% 1. automation_logo.pdf
-% 2. beamerthemeJUB.sty
-% 3. bibliography_file.bib
-% 4. jjlogo.pdf
-% 5. large-corner.pdf
-% 6. nuaa.png
-% 7. small-corner.pdf
+% Required files to compile by pdflatex:
+% 1. beamerthemeUniversiteitAntwerpen.sty
+% 2. beamercolorthemeUniversiteitAntwerpen.sty
+% 3. beamerfontthemeUniversiteitAntwerpen.sty
+% 4. beamerinnerthemeUniversiteitAntwerpen.sty
+% 5. beamerouterthemeUniversiteitAntwerpen.sty
+% 6. bibliography_file.bib
+% 7. nuaa_logo.pdf
+% 8. nuaa_name.pdf
+% 9. uabottomwave.pdf is required only for light theme
+% 10. uaBackgroundDarkBlue.pdf is required only for dark theme
+% 11. uaBackgroundLightBlue.pdf is required only for dark theme
 
 % \documentclass[handout]{beamer}
 \documentclass[CJKutf8,compress]{beamer}
 
+% switch the following lines to choose light and dark themes
 \usetheme[light,framenumber,totalframenumber]{UniversiteitAntwerpen}
 %\usetheme[dark]{UniversiteitAntwerpen}
 \usepackage{CJKutf8}
 \usepackage{libertine}
 
 \begin{document}
-\begin{CJK*}{UTF8}{gbsn} % support for Chinese
+\begin{CJK*}{UTF8}{gkai} % support for Chinese
 
   \title{Main Title 主标题}
   \subtitle{Subtitle 副标题} % optional
   \author{Author 作者}
-  \date{2017\ 06\ 08}
-  \institute{Nanjing University of Aeronautics and Astronautics\\ 南京航空航天大学\\ \url{http://www.nuaa.edu.cn/}} % optional
 
   \begin{frame}
     \titlepage
@@ -44,26 +43,26 @@
     \tableofcontents
   \end{frame} % ================================================================
   
-  \section{Introduction}
+  \section{1. Introduction}
   \label{Sec:introduction}
   \begin{frame}{1. Introduction 引言}
     \framesubtitle{frame subtitle 页面副标题}
-    This nuaa-JUB.tex is a \LaTeX \ Beamer template using the JUB Beamer theme \cite{JUBTheme} produced by Billy Okal.
+    This nuaa-AMS.tex is a \LaTeX \ Beamer template using the Beamer theme for the university of Amsterdam\cite{AMSTheme} produced by Nico Schlömer.
 
     \bigskip
 
-    此nuaa-JUB.tex文件是一个使用了Billy Okal制作的JUB Beam主题\cite{JUBTheme}的\LaTeX \ Beamer模板。
+    此nuaa-AMS.tex文件是一个使用了Nico Schlömer制作的阿姆斯特丹大学主题\cite{AMSTheme}的\LaTeX \ Beamer模板。
 
     \begin{figure}
       \begin{center}
-        \includegraphics[scale=0.1]{latex.eps}
+        \includegraphics[scale=0.1]{latex.png}
       \end{center}
       \caption{\LaTeX \ beamer}
       \label{Fig:latex_beamer}
     \end{figure}
   \end{frame} % ================================================================
 
-  \section{Mathematical model}
+  \section{2. Mathematical model}
   \label{Sec:model}
   \begin{frame}{2. Mathematical model 数学模型}
     Lists 列表
@@ -87,7 +86,7 @@
   \end{frame} % ================================================================
   
   \begin{frame}{2. Mathematical model 数学模型}
-    $\backslash$pause命令可用于逐次展示itemize、enumerate中的条目。
+    \alert{$\backslash$pause命令}可用于逐次展示itemize、enumerate中的条目。
 
     \begin{itemize}
     \pause
@@ -99,27 +98,7 @@
     \end{itemize}
   \end{frame} % ================================================================
   
-  \begin{frame}[fragile]
-    % 带有verbatim块的\begin{frame}必须带有fragile参数且独占一行
-    \frametitle{2. Mathematical model 数学模型}
-    $\backslash$pause命令可用于逐次展示itemize、enumerate中的条目。
-    
-\begin{verbatim}
-
-    \begin{itemize}
-      \pause
-      \item Apple
-      \pause
-      \item Orange
-      \pause
-      \item Banana
-    \end{itemize}
-
-\end{verbatim}
-    % 带有verbatim块的\end{frame}必须独占一行，且无空格或Tab缩进
-\end{frame}
-  
-  \section{Empirical experiments}
+  \section{3. Empirical experiments}
   \label{Sec:experiments}
   \begin{frame}{3. Empirical experiments 实验}
     Blocks 区块

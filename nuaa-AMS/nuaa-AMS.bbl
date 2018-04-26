@@ -21,10 +21,11 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
-\bibitem{JUBTheme}
+\bibitem{AMSTheme}
 \BIBentryALTinterwordspacing
-B.~Okal, ``Latex beamer theme jub,'' April 2014, accessed: 2017-06-08.
-  [Online]. Available: \url{https://github.com/makokal/beamer-themes}
+N.~Schlömer, ``Latex beamer theme for the university of amsterdam,'' 2011,
+  accessed: 2018-04-26. [Online]. Available:
+  \url{https://github.com/nschloe/ua-beamer}
 \BIBentrySTDinterwordspacing
 
 \end{thebibliography}

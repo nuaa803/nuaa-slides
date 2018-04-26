@@ -32,14 +32,17 @@
 \setlength{\margin}{0.8832cm}% 0.69in* 64/127 *2.54cm/in
 
 \newlength{\ulogowidth}
-\setlength{\ulogowidth}{1.1136cm}% 0.87in* 64/127 *2.54cm/in
+%\setlength{\ulogowidth}{1.1136cm}% 0.87in* 64/127 *2.54cm/in
+\setlength{\ulogowidth}{1.5cm}% 0.87in* 64/127 *2.54cm/in
 \newlength{\ulogoheight}
-\setlength{\ulogoheight}{0.90066895151709692cm}% 0.70364761837273193in* 64/127 *2.54cm/in
+%\setlength{\ulogoheight}{0.90066895151709692cm}% 0.70364761837273193in* 64/127 *2.54cm/in
+\setlength{\ulogoheight}{1.5cm}% 0.70364761837273193in* 64/127 *2.54cm/in
 \ifbeamer@dark\else%
   \newlength{\ulogopadding}
   % padding = distance from the rightmost point of the logo to where the U starts;
   % value approximately \ulogowidth*0.25
-  \setlength{\ulogopadding}{0.2784cm}
+  %\setlength{\ulogopadding}{0.2784cm}
+  \setlength{\ulogopadding}{0.375cm}
 \fi
 % ----------------------------------------------------------------------------
 % *** END DEFINE LENGTHS >>>
@@ -49,7 +52,7 @@
 % ----------------------------------------------------------------------------
 % *** DEFINE IMAGES <<<
 % ----------------------------------------------------------------------------
-\pgfdeclareimage[width=\ulogowidth]{ULogo}{logo_UA_U_kl3}
+\pgfdeclareimage[width=\ulogowidth]{ULogo}{nuaa_logo}
 
 % The text logo is a bit of a special case:
 % As given in the PowerPoint(R) slides, the logo is 3.12''x0.36'', the picture file
@@ -57,8 +60,9 @@
 % left: 3px, right: 3px, top: 8px, bottom: 2px.
 % The PDF that we use here does not have any margins, so adapt the sizes here.
 \newlength{\textlogoheight}
-\setlength{\textlogoheight}{0.37218461538461539cm}% 0.36in* 64/127 *2.54cm/in * 42px/52px
-\pgfdeclareimage[height=\textlogoheight]{uTextColor}{logo_UA_tekst_kl}
+%\setlength{\textlogoheight}{0.37218461538461539cm}% 0.36in* 64/127 *2.54cm/in * 42px/52px
+\setlength{\textlogoheight}{0.5cm}% 0.36in* 64/127 *2.54cm/in * 42px/52px
+\pgfdeclareimage[height=\textlogoheight]{uTextColor}{nuaa_name}
 
 \ifthenelse{ \boolean{beamer@dark} \OR \boolean{beamer@darktitle} }
 % then
@@ -208,7 +212,7 @@
   }
   % *** ELSE *** light footline
   {%
-     % conditionally put the ua text logo on the page
+     % conditionally put the nuaa text logo on the page
     \ifthenelse{\c@framenumber=1 \OR \NOT \boolean{beamer@compress}}
     {\pgftext[left,bottom,at=\uTextColorPosLight]{\pgfuseimage{uTextColor}}}%
     {}%

@@ -1,5 +1,5 @@
 \frametitle{2. Mathematical model 数学模型}
-    $\backslash$pause命令可用于逐次展示itemize、enumerate中的条目。
+    \alert{$\backslash$pause命令}可用于逐次展示itemize、enumerate中的条目。
 
 \begin{verbatim}
 
