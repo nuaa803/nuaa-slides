@@ -1,4 +1,0 @@
-\beamer@endinputifotherversion {3.36pt}
-\beamer@sectionintoc {1}{1. Introduction}{3}{0}{1}
-\beamer@sectionintoc {2}{2. Mathematical model}{4}{0}{2}
-\beamer@sectionintoc {3}{3. Empirical experiments}{9}{0}{3}
